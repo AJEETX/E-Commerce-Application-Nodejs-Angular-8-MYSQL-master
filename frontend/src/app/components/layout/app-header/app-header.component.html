@@ -42,16 +42,12 @@
         <ng-template #elseTemplate>
           <li class="nav-item" mdbDropdown>
             <a class="nav-link waves-effect" [routerLink]="['/customer/login']">
-              <strong class="pink-text">Sign In</strong>
+              <strong class="pink-text">Login</strong>
             </a>
           </li>
+
           <li class="nav-item">
-            <a class="nav-link waves-effect" >
-              <strong>or</strong>
-            </a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link waves-effect" [routerLink]="['/customer/register']" target="_blank">
+            <a class="nav-link waves-effect" [routerLink]="['/customer/register']">
               <strong class="pink-text">Register</strong>
             </a>
           </li>
