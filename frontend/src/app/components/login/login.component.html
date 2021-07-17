@@ -1,7 +1,7 @@
 <section class="register-block">
   <div class="container">
     <div class="row">
-      <div class="col-md-4 register-sec">
+      <div class="col-md-8 register-sec">
         <h2 class="text-center">Sign in</h2>
         <form class="register-form" [formGroup]="loginForm" (ngSubmit)="onSubmit()">
           <div class="form-group">
@@ -30,10 +30,11 @@
           </div>
           <div class="form-check">
             <button type="submit" class="btn btn-register float-right">Submit</button>
+            <button type="button" class="btn btn-warning float-right" (click)="onCancel($event)">Cancel</button>
           </div>
         </form>
       </div>
-      <div class="col-md-8 banner-sec">
+      <div class="col-md-4 banner-sec">
       </div>
     </div>
   </div>

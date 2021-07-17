@@ -47,5 +47,7 @@ export class LoginComponent implements OnInit {
                     this.loading = false;
                 });
   }
-
+  onCancel(event){
+    this.router.navigate(['/'])
+  }
 }
